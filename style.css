@@ -74,7 +74,7 @@ main{
     margin-bottom: 1rem;
 }
 
-.subtitle {
+.legenda {
     color: #444;
     text-transform: uppercase;
     font-weight: bold;
@@ -82,17 +82,17 @@ main{
 
 }
 
-.description {
+.descricao {
     line-height: 1.6rem;
     margin-bottom: 2rem;
 }
 
-.price-container {
+.preco-container {
     display: flex;
     justify-content: space-between;
 }
 
-.price {
+.preco {
     font-weight: 900;
     font-size: 2rem;
 }
@@ -110,7 +110,7 @@ main{
 
 
 
-/* Dark theme*/
+/* Tema escuro*/
 .dark,
 .dark header{
     background-color: #263238;
@@ -133,12 +133,12 @@ main{
     background-color: #273035;
 }
 
-.dark .subtitle {
+.dark .legenda {
     color: #67b4f3;
 }
 
 
-.dark .description {
+.dark .legenda {
     color: #2196f3;
 }
 

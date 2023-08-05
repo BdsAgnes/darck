@@ -1,25 +1,26 @@
-const changeThemeBtn = document.querySelector("#change-theme");
-toggleDarkMode();
+const changeThemeBtn = document.querySelector("#mudar-tema");
+alternarModoEscuro();
 
-// toggle dark mode
-function toggleDarkMode() {
+// Alternar modo escuro
+
+function alternarModoEscuro() {
     document.body.classList.toggle("dark");
 
 }
-
-//  load light or dark mode
+// Carregar modo claro ou escuro
 function loadTheme() {
-    const darkMode = localStorage.getitem("dark")
+    const modoEscuro = localStorage.getitem("dark")
 
-    if (darkMode) {
-        toggleDarkMode();
+    if (modoEscuro) {
+        alternarModoEscuro();
     }
 }
 
 changeThemeBtn.addEventListener("change", function() {
-    toggleDarkMode();
+    alternarModoEscuro();
 
-    //save or remove dark mode
+// Salvar ou remover modo escuro
+
         localStorage.removeItem("dark");
 
         if(document.body.classList.contains("dark")) {
