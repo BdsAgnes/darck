@@ -1,4 +1,4 @@
-const changeThemeBtn = document.querySelector("#mudar-tema");
+const mudarTemaBtn = document.querySelector("#mudar-tema");
 alternarModoEscuro();
 
 // Alternar modo escuro
@@ -8,7 +8,7 @@ function alternarModoEscuro() {
 
 }
 // Carregar modo claro ou escuro
-function loadTheme() {
+function carregarTema() {
     const modoEscuro = localStorage.getitem("dark")
 
     if (modoEscuro) {
@@ -16,7 +16,7 @@ function loadTheme() {
     }
 }
 
-changeThemeBtn.addEventListener("change", function() {
+mudarTemaBtn.addEventListener("change", function() {
     alternarModoEscuro();
 
 // Salvar ou remover modo escuro
